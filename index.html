@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nepal Trails — Your trusted local travel partner for trekking, tours, and adventure in Nepal. Explore Everest, Annapurna, Pokhara, Mustang and more." />
+  <meta name="keywords" content="Nepal travel, Nepal trekking, Everest Base Camp, Annapurna, Pokhara tour, Nepal packages, Himalaya trek, Nepal tourism" />
+  <meta property="og:title" content="Nepal Trails | Trusted Nepal Travel Agency" />
+  <meta name="google-site-verification" content="nB72Exb90M3faHIUe08-t3ISDR30Bc0K9T5g6K09r2w" />
+  <meta property="og:description" content="Experience the real Nepal — mountains, culture, and adventure. Book your dream trip with local experts." />
+  <title>Nepal Trails | Trusted Nepal Travel Agency</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== STICKY NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" id="nav-logo-link">
+        <div class="logo-icon">
+          <i class="fas fa-mountain"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">Nepal Trails</span>
+          <span class="logo-sub">Your Local Travel Partner</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link active" id="nav-home">Home</a>
+        <a href="#destinations" class="nav-link" id="nav-destinations">Destinations</a>
+        <a href="#trekking" class="nav-link" id="nav-trekking">Trekking</a>
+        <a href="#packages" class="nav-link" id="nav-packages">Tour Packages</a>
+        <a href="#about" class="nav-link" id="nav-about">About</a>
+        <a href="#testimonials" class="nav-link" id="nav-testimonials">Reviews</a>
+        <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
+        <a href="#booking-cta" class="btn btn-primary nav-cta" id="nav-book-btn">
+          <i class="fas fa-calendar-check"></i> Book Now
+        </a>
+      </nav>
+
+      <!-- Hamburger Menu Button -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Overlay -->
+    <div class="nav-overlay" id="nav-overlay"></div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <!-- Background gradient overlay + CSS based mountain scene -->
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container hero-content" id="hero-content">
+
+        <!-- Trust badge -->
+        <div class="trust-badge reveal" id="hero-trust-badge">
+          <i class="fas fa-shield-alt"></i>
+          <span>Trusted by 10,000+ Travelers Since 2010</span>
+        </div>
+
+        <h1 class="hero-headline reveal" id="hero-headline">
+          Discover the Soul of <br />
+          <span class="text-highlight">Nepal</span>
+        </h1>
+
+        <p class="hero-subheadline reveal" id="hero-subheadline">
+          From the mighty Himalayas to peaceful temples and lush jungles —<br />
+          let our local experts craft your perfect Nepal experience.
+        </p>
+
+        <!-- Hero CTA Buttons -->
+        <div class="hero-cta reveal" id="hero-cta">
+          <a href="#packages" class="btn btn-primary btn-lg" id="hero-explore-btn">
+            <i class="fas fa-compass"></i> Explore Packages
+          </a>
+          <a href="#contact" class="btn btn-outline btn-lg" id="hero-contact-btn">
+            <i class="fab fa-whatsapp"></i> WhatsApp Us
+          </a>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="hero-stats reveal" id="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">10K+</span>
+            <span class="stat-label">Happy Travelers</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">150+</span>
+            <span class="stat-label">Tour Packages</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">15 Yrs</span>
+            <span class="stat-label">Local Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">4.9★</span>
+            <span class="stat-label">Average Rating</span>
+          </div>
+        </div>
+
+        <!-- Trip Inquiry Form -->
+        <div class="hero-form reveal" id="hero-inquiry-form">
+          <div class="form-header">
+            <i class="fas fa-search"></i>
+            <span>Plan Your Trip</span>
+          </div>
+          <form class="inquiry-form" id="inquiry-form">
+            <div class="form-group">
+              <label for="trip-destination">Destination</label>
+              <select id="trip-destination" name="destination">
+                <option value="">Select Destination</option>
+                <option value="everest">Everest Base Camp</option>
+                <option value="annapurna">Annapurna Circuit</option>
+                <option value="pokhara">Pokhara</option>
+                <option value="mustang">Upper Mustang</option>
+                <option value="chitwan">Chitwan</option>
+                <option value="lumbini">Lumbini</option>
+                <option value="rara">Rara Lake</option>
+                <option value="ilam">Ilam</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="trip-date">Travel Date</label>
+              <input type="date" id="trip-date" name="date" />
+            </div>
+            <div class="form-group">
+              <label for="trip-travelers">Travelers</label>
+              <select id="trip-travelers" name="travelers">
+                <option value="1">1 Person</option>
+                <option value="2" selected>2 Persons</option>
+                <option value="3-5">3–5 Persons</option>
+                <option value="6+">6+ (Group)</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit-btn" id="inquiry-submit-btn">
+              <i class="fas fa-paper-plane"></i> Get Free Quote
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator" id="scroll-indicator">
+        <div class="scroll-dot"></div>
+        <span>Scroll to explore</span>
+      </div>
+    </section>
+
+    <!-- ===================== POPULAR DESTINATIONS ===================== -->
+    <section class="section destinations-section" id="destinations">
+      <div class="container">
+
+        <div class="section-header reveal" id="destinations-header">
+          <span class="section-tag">Explore Nepal</span>
+          <h2 class="section-title">Popular Destinations</h2>
+          <p class="section-desc">From snow-capped peaks to lush terai forests — Nepal holds a world of wonders waiting for you.</p>
+        </div>
+
+        <div class="destinations-grid" id="destinations-grid">
+
+          <!-- Pokhara -->
+          <div class="dest-card reveal" id="dest-pokhara">
+            <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80')">
+              <div class="dest-badge">Most Popular</div>
+              <div class="dest-overlay">
+                <a href="#packages" class="btn btn-sm btn-white" id="dest-pokhara-btn">Explore</a>
+              </div>
+            </div>
+            <div class="dest-body">
+              <div class="dest-meta">
+                <span class="dest-location"><i class="fas fa-map-marker-alt"></i> Gandaki Province</span>
+                <span class="dest-rating"><i class="fas fa-star"></i> 4.9</span>
+              </div>
+              <h3 class="dest-title">Pokhara</h3>
+              <p class="dest-desc">Lakeside paradise with stunning Annapurna views, adventure sports, and peaceful Fewa Lake boat rides.</p>
+              <div class="dest-footer">
+                <div class="dest-price">
+                  <span class="price-from">From</span>
+                  <span class="price-amount">NPR 15,000</span>
+                  <span class="price-per">/person</span>
+                </div>
+                <a href="#contact" class="btn btn-sm btn-primary" id="dest-pokhara-book">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mustang -->
+          <div class="dest-card reveal" id="dest-mustang">
+            <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=600&q=80')">
+              <div class="dest-badge badge-adventure">Hidden Gem</div>
+              <div class="dest-overlay">
+                <a href="#packages" class="btn btn-sm btn-white" id="dest-mustang-btn">Explore</a>
+              </div>
+            </div>
+            <div class="dest-body">
+              <div class="dest-meta">
+                <span class="dest-location"><i class="fas fa-map-marker-alt"></i> Mustang District</span>
+                <span class="dest-rating"><i class="fas fa-star"></i> 4.8</span>
+              </div>
+              <h3 class="dest-title">Upper Mustang</h3>
+              <p class="dest-desc">Ancient Tibetan kingdom, mystical cave monasteries, and surreal red canyon landscape unlike anywhere on Earth.</p>
+              <div class="dest-footer">
+                <div class="dest-price">
+                  <span class="price-from">From</span>
+                  <span class="price-amount">NPR 85,000</span>
+                  <span class="price-per">/person</span>
+                </div>
+                <a href="#contact" class="btn btn-sm btn-primary" id="dest-mustang-book">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Everest Base Camp -->
+          <div class="dest-card dest-featured reveal" id="dest-ebc">
+            <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80')">
+              <div class="dest-badge badge-top">Bucket List</div>
+              <div class="dest-overlay">
+                <a href="#packages" class="btn btn-sm btn-white" id="dest-ebc-btn">Explore</a>
+              </div>
+            </div>
+            <div class="dest-body">
+              <div class="dest-meta">
+                <span class="dest-location"><i class="fas fa-map-marker-alt"></i> Khumbu Region</span>
+                <span class="dest-rating"><i class="fas fa-star"></i> 5.0</span>
+              </div>
+              <h3 class="dest-title">Everest Base Camp</h3>
+              <p class="dest-desc">Stand at the foot of the world's highest peak. A life-changing 14-day trek through Sherpa culture and Himalayan grandeur.</p>
+              <div class="dest-footer">
+                <div class="dest-price">
+                  <span class="price-from">From</span>
+                  <span class="price-amount">NPR 65,000</span>
+                  <span class="price-per">/person</span>
+                </div>
+                <a href="#contact" class="btn btn-sm btn-primary" id="dest-ebc-book">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Annapurna -->
+          <div class="dest-card reveal" id="dest-annapurna">
+            <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1623282033815-40b05d96c903?w=600&q=80')">
+              <div class="dest-overlay">
+                <a href="#packages" class="btn btn-sm btn-white" id="dest-annapurna-btn">Explore</a>
+              </div>
+            </div>
+            <div class="dest-body">
+              <div class="dest-meta">
+                <span class="dest-location"><i class="fas fa-map-marker-alt"></i> Gandaki Province</span>
+                <span class="dest-rating"><i class="fas fa-star"></i> 4.9</span>
+              </div>
+              <h3 class="dest-title">Annapurna Circuit</h3>
+              <p class="dest-desc">World-renowned trekking route through diverse landscapes, traditional villages, and the epic Thorong La Pass at 5,416m.</p>
+              <div class="dest-footer">
+                <div class="dest-price">
+                  <span class="price-from">From</span>
+                  <span class="price-amount">NPR 45,000</span>
+                  <span class="price-per">/person</span>
+                </div>
+                <a href="#contact" class="btn btn-sm btn-primary" id="dest-annapurna-book">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chitwan -->
+          <div class="dest-card reveal" id="dest-chitwan">
+            <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=600&q=80')">
+              <div class="dest-badge badge-nature">Wildlife</div>
+              <div class="dest-overlay">
+                <a href="#packages" class="btn btn-sm btn-white" id="dest-chitwan-btn">Explore</a>
+              </div>
+            </div>
+            <div class="dest-body">
+              <div class="dest-meta">
+                <span class="dest-location"><i class="fas fa-map-marker-alt"></i> Bagmati Province</span>
+                <span class="dest-rating"><i class="fas fa-star"></i> 4.7</span>
+              </div>
+              <h3 class="dest-title">Chitwan National Park</h3>
+              <p class="dest-desc">UNESCO World Heritage jungle safari with rhinos, tigers, elephants and traditional Tharu culture experiences.</p>
+              <div class="dest-footer">
+                <div class="dest-price">
+                  <span class="price-from">From</span>
+                  <span class="price-amount">NPR 18,000</span>
+                  <span class="price-per">/person</span>
+                </div>
+                <a href="#contact" class="btn btn-sm btn-primary" id="dest-chitwan-book">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lumbini -->
+          <div class="dest-card reveal" id="dest-lumbini">
+            <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1609347744403-2306e1b8f29d?w=600&q=80')">
+              <div class="dest-badge badge-spiritual">Sacred</div>
+              <div class="dest-overlay">
+                <a href="#packages" class="btn btn-sm btn-white" id="dest-lumbini-btn">Explore</a>
+              </div>
+            </div>
+            <div class="dest-body">
+              <div class="dest-meta">
+                <span class="dest-location"><i class="fas fa-map-marker-alt"></i> Lumbini Province</span>
+                <span class="dest-rating"><i class="fas fa-star"></i> 4.8</span>
+              </div>
+              <h3 class="dest-title">Lumbini</h3>
+              <p class="dest-desc">Birthplace of Lord Buddha. Sacred pilgrimage destination with monasteries, the Mayadevi Temple, and serene gardens.</p>
+              <div class="dest-footer">
+                <div class="dest-price">
+                  <span class="price-from">From</span>
+                  <span class="price-amount">NPR 12,000</span>
+                  <span class="price-per">/person</span>
+                </div>
+                <a href="#contact" class="btn btn-sm btn-primary" id="dest-lumbini-book">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ilam -->
+          <div class="dest-card reveal" id="dest-ilam">
+            <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1597655601841-214a4cfe8b2c?w=600&q=80')">
+              <div class="dest-badge badge-nature">Tea Garden</div>
+              <div class="dest-overlay">
+                <a href="#packages" class="btn btn-sm btn-white" id="dest-ilam-btn">Explore</a>
+              </div>
+            </div>
+            <div class="dest-body">
+              <div class="dest-meta">
+                <span class="dest-location"><i class="fas fa-map-marker-alt"></i> Province No. 1</span>
+                <span class="dest-rating"><i class="fas fa-star"></i> 4.6</span>
+              </div>
+              <h3 class="dest-title">Ilam</h3>
+              <p class="dest-desc">Rolling green tea gardens, sunrise views of Kanchenjunga, and the gentle rhythm of eastern Nepali hill life.</p>
+              <div class="dest-footer">
+                <div class="dest-price">
+                  <span class="price-from">From</span>
+                  <span class="price-amount">NPR 10,000</span>
+                  <span class="price-per">/person</span>
+                </div>
+                <a href="#contact" class="btn btn-sm btn-primary" id="dest-ilam-book">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rara Lake -->
+          <div class="dest-card reveal" id="dest-rara">
+            <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80')">
+              <div class="dest-badge badge-adventure">Remote</div>
+              <div class="dest-overlay">
+                <a href="#packages" class="btn btn-sm btn-white" id="dest-rara-btn">Explore</a>
+              </div>
+            </div>
+            <div class="dest-body">
+              <div class="dest-meta">
+                <span class="dest-location"><i class="fas fa-map-marker-alt"></i> Karnali Province</span>
+                <span class="dest-rating"><i class="fas fa-star"></i> 4.9</span>
+              </div>
+              <h3 class="dest-title">Rara Lake</h3>
+              <p class="dest-desc">Nepal's largest lake — a pristine, crystal-clear jewel tucked in the remote Karnali mountains. Pure untouched nature.</p>
+              <div class="dest-footer">
+                <div class="dest-price">
+                  <span class="price-from">From</span>
+                  <span class="price-amount">NPR 55,000</span>
+                  <span class="price-per">/person</span>
+                </div>
+                <a href="#contact" class="btn btn-sm btn-primary" id="dest-rara-book">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- end destinations-grid -->
+      </div>
+    </section>
+
+    <!-- ===================== ADVENTURE ACTIVITIES ===================== -->
+    <section class="section activities-section" id="trekking">
+      <div class="container">
+
+        <div class="section-header reveal" id="activities-header">
+          <span class="section-tag">Thrilling Experiences</span>
+          <h2 class="section-title">Adventure Activities</h2>
+          <p class="section-desc">Push your limits and collect memories that last a lifetime — Nepal is built for adventure.</p>
+        </div>
+
+        <div class="activities-grid" id="activities-grid">
+
+          <div class="activity-card reveal" id="act-trekking">
+            <div class="activity-icon">
+              <i class="fas fa-hiking"></i>
+            </div>
+            <div class="activity-img" style="background-image: url('https://images.unsplash.com/photo-1551632811-561732d1e306?w=500&q=80')"></div>
+            <div class="activity-body">
+              <h3>Trekking</h3>
+              <p>Trails from easy hill walks to legendary Himalayan expeditions. Over 30 certified trekking routes available.</p>
+              <div class="activity-meta">
+                <span><i class="fas fa-clock"></i> 3–21 Days</span>
+                <span><i class="fas fa-signal"></i> All Levels</span>
+              </div>
+              <a href="#contact" class="btn btn-sm btn-outline-dark" id="act-trek-btn">Inquire Now</a>
+            </div>
+          </div>
+
+          <div class="activity-card reveal" id="act-paragliding">
+            <div class="activity-icon">
+              <i class="fas fa-wind"></i>
+            </div>
+            <div class="activity-img" style="background-image: url('https://images.unsplash.com/photo-1572305867721-db6ad8c1bf25?w=500&q=80')"></div>
+            <div class="activity-body">
+              <h3>Paragliding</h3>
+              <p>Soar above Pokhara's Fewa Lake with breathtaking Annapurna panoramas. Pokhara is Asia's paragliding capital.</p>
+              <div class="activity-meta">
+                <span><i class="fas fa-clock"></i> 30 Min</span>
+                <span><i class="fas fa-signal"></i> Beginner OK</span>
+              </div>
+              <a href="#contact" class="btn btn-sm btn-outline-dark" id="act-para-btn">Inquire Now</a>
+            </div>
+          </div>
+
+          <div class="activity-card reveal" id="act-rafting">
+            <div class="activity-icon">
+              <i class="fas fa-water"></i>
+            </div>
+            <div class="activity-img" style="background-image: url('https://images.unsplash.com/photo-1530866495561-507c9faab2ed?w=500&q=80')"></div>
+            <div class="activity-body">
+              <h3>White Water Rafting</h3>
+              <p>Ride the wild Trishuli, Bhote Koshi, and Seti rivers. Grade II–V rapids for all experience levels.</p>
+              <div class="activity-meta">
+                <span><i class="fas fa-clock"></i> 1–3 Days</span>
+                <span><i class="fas fa-signal"></i> Intermediate</span>
+              </div>
+              <a href="#contact" class="btn btn-sm btn-outline-dark" id="act-raft-btn">Inquire Now</a>
+            </div>
+          </div>
+
+          <div class="activity-card reveal" id="act-safari">
+            <div class="activity-icon">
+              <i class="fas fa-binoculars"></i>
+            </div>
+            <div class="activity-img" style="background-image: url('https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=500&q=80')"></div>
+            <div class="activity-body">
+              <h3>Jungle Safari</h3>
+              <p>Jeep and elephant safaris in Chitwan and Bardia parks. Spot rhinos, leopards, crocodiles and Bengal tigers.</p>
+              <div class="activity-meta">
+                <span><i class="fas fa-clock"></i> 2–5 Days</span>
+                <span><i class="fas fa-signal"></i> Family OK</span>
+              </div>
+              <a href="#contact" class="btn btn-sm btn-outline-dark" id="act-safari-btn">Inquire Now</a>
+            </div>
+          </div>
+
+          <div class="activity-card reveal" id="act-flight">
+            <div class="activity-icon">
+              <i class="fas fa-plane"></i>
+            </div>
+            <div class="activity-img" style="background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=500&q=80')"></div>
+            <div class="activity-body">
+              <h3>Mountain Flights</h3>
+              <p>One-hour sunrise flight past Everest, Lhotse, Makalu, and Kangchenjunga from Kathmandu airport.</p>
+              <div class="activity-meta">
+                <span><i class="fas fa-clock"></i> 1 Hour</span>
+                <span><i class="fas fa-signal"></i> All Ages</span>
+              </div>
+              <a href="#contact" class="btn btn-sm btn-outline-dark" id="act-flight-btn">Inquire Now</a>
+            </div>
+          </div>
+
+          <div class="activity-card reveal" id="act-cultural">
+            <div class="activity-icon">
+              <i class="fas fa-gopuram"></i>
+            </div>
+            <div class="activity-img" style="background-image: url('https://images.unsplash.com/photo-1582719508461-905c673771fd?w=500&q=80')"></div>
+            <div class="activity-body">
+              <h3>Cultural Tours</h3>
+              <p>Kathmandu's UNESCO World Heritage temples, Newari festivals, traditional crafts, and local homestay experiences.</p>
+              <div class="activity-meta">
+                <span><i class="fas fa-clock"></i> 1–7 Days</span>
+                <span><i class="fas fa-signal"></i> All Levels</span>
+              </div>
+              <a href="#contact" class="btn btn-sm btn-outline-dark" id="act-cultural-btn">Inquire Now</a>
+            </div>
+          </div>
+
+        </div><!-- end activities-grid -->
+      </div>
+    </section>
+
+    <!-- ===================== TOUR PACKAGES ===================== -->
+    <section class="section packages-section" id="packages">
+      <div class="container">
+
+        <div class="section-header reveal" id="packages-header">
+          <span class="section-tag">Best Value</span>
+          <h2 class="section-title">Ready-to-Book Tour Packages</h2>
+          <p class="section-desc">Carefully crafted packages with everything included — accommodation, guides, permits, and memories.</p>
+        </div>
+
+        <!-- Package Filter Tabs -->
+        <div class="pkg-tabs reveal" id="pkg-tabs">
+          <button class="pkg-tab active" data-filter="all" id="tab-all">All</button>
+          <button class="pkg-tab" data-filter="trekking" id="tab-trekking">Trekking</button>
+          <button class="pkg-tab" data-filter="cultural" id="tab-cultural">Cultural</button>
+          <button class="pkg-tab" data-filter="family" id="tab-family">Family</button>
+          <button class="pkg-tab" data-filter="adventure" id="tab-adventure">Adventure</button>
+        </div>
+
+        <div class="packages-grid" id="packages-grid">
+
+          <div class="pkg-card reveal" data-category="trekking" id="pkg-ebc">
+            <div class="pkg-img" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80')">
+              <div class="pkg-duration"><i class="fas fa-calendar"></i> 14 Days</div>
+              <div class="pkg-tag tag-trekking">Trekking</div>
+            </div>
+            <div class="pkg-body">
+              <h3>Everest Base Camp Trek</h3>
+              <div class="pkg-includes">
+                <span><i class="fas fa-check"></i> Licensed Guide</span>
+                <span><i class="fas fa-check"></i> Tea House Stay</span>
+                <span><i class="fas fa-check"></i> All Permits</span>
+                <span><i class="fas fa-check"></i> Airport Transfer</span>
+              </div>
+              <div class="pkg-footer">
+                <div class="pkg-price">
+                  <span>NPR 75,000</span>
+                  <small>/person</small>
+                </div>
+                <a href="#contact" class="btn btn-primary btn-sm" id="pkg-ebc-btn">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pkg-card reveal" data-category="cultural" id="pkg-ktm-tour">
+            <div class="pkg-img" style="background-image: url('https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&q=80')">
+              <div class="pkg-duration"><i class="fas fa-calendar"></i> 7 Days</div>
+              <div class="pkg-tag tag-cultural">Cultural</div>
+            </div>
+            <div class="pkg-body">
+              <h3>Kathmandu Valley Heritage Tour</h3>
+              <div class="pkg-includes">
+                <span><i class="fas fa-check"></i> 3-Star Hotel</span>
+                <span><i class="fas fa-check"></i> Expert Guide</span>
+                <span><i class="fas fa-check"></i> All Entrances</span>
+                <span><i class="fas fa-check"></i> Meals Included</span>
+              </div>
+              <div class="pkg-footer">
+                <div class="pkg-price">
+                  <span>NPR 25,000</span>
+                  <small>/person</small>
+                </div>
+                <a href="#contact" class="btn btn-primary btn-sm" id="pkg-ktm-btn">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pkg-card reveal" data-category="family" id="pkg-family">
+            <div class="pkg-img" style="background-image: url('https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=600&q=80')">
+              <div class="pkg-duration"><i class="fas fa-calendar"></i> 5 Days</div>
+              <div class="pkg-tag tag-family">Family</div>
+            </div>
+            <div class="pkg-body">
+              <h3>Pokhara + Chitwan Family Special</h3>
+              <div class="pkg-includes">
+                <span><i class="fas fa-check"></i> Resort Stay</span>
+                <span><i class="fas fa-check"></i> Jungle Safari</span>
+                <span><i class="fas fa-check"></i> Boat Ride</span>
+                <span><i class="fas fa-check"></i> All Transport</span>
+              </div>
+              <div class="pkg-footer">
+                <div class="pkg-price">
+                  <span>NPR 35,000</span>
+                  <small>/person</small>
+                </div>
+                <a href="#contact" class="btn btn-primary btn-sm" id="pkg-family-btn">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pkg-card reveal" data-category="adventure" id="pkg-rafting">
+            <div class="pkg-img" style="background-image: url('https://images.unsplash.com/photo-1530866495561-507c9faab2ed?w=600&q=80')">
+              <div class="pkg-duration"><i class="fas fa-calendar"></i> 3 Days</div>
+              <div class="pkg-tag tag-adventure">Adventure</div>
+            </div>
+            <div class="pkg-body">
+              <h3>Trishuli Rafting Adventure</h3>
+              <div class="pkg-includes">
+                <span><i class="fas fa-check"></i> Safety Gear</span>
+                <span><i class="fas fa-check"></i> Expert Raft Guide</span>
+                <span><i class="fas fa-check"></i> Camping</span>
+                <span><i class="fas fa-check"></i> All Meals</span>
+              </div>
+              <div class="pkg-footer">
+                <div class="pkg-price">
+                  <span>NPR 12,000</span>
+                  <small>/person</small>
+                </div>
+                <a href="#contact" class="btn btn-primary btn-sm" id="pkg-rafting-btn">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pkg-card reveal" data-category="trekking" id="pkg-annapurna">
+            <div class="pkg-img" style="background-image: url('https://images.unsplash.com/photo-1623282033815-40b05d96c903?w=600&q=80')">
+              <div class="pkg-duration"><i class="fas fa-calendar"></i> 10 Days</div>
+              <div class="pkg-tag tag-trekking">Trekking</div>
+            </div>
+            <div class="pkg-body">
+              <h3>Annapurna Base Camp Trek</h3>
+              <div class="pkg-includes">
+                <span><i class="fas fa-check"></i> Licensed Guide</span>
+                <span><i class="fas fa-check"></i> Porter Included</span>
+                <span><i class="fas fa-check"></i> All Permits</span>
+                <span><i class="fas fa-check"></i> Tea House Stay</span>
+              </div>
+              <div class="pkg-footer">
+                <div class="pkg-price">
+                  <span>NPR 52,000</span>
+                  <small>/person</small>
+                </div>
+                <a href="#contact" class="btn btn-primary btn-sm" id="pkg-abc-btn">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pkg-card reveal" data-category="cultural" id="pkg-lumbini">
+            <div class="pkg-img" style="background-image: url('https://images.unsplash.com/photo-1609347744403-2306e1b8f29d?w=600&q=80')">
+              <div class="pkg-duration"><i class="fas fa-calendar"></i> 4 Days</div>
+              <div class="pkg-tag tag-cultural">Cultural</div>
+            </div>
+            <div class="pkg-body">
+              <h3>Lumbini Pilgrimage Tour</h3>
+              <div class="pkg-includes">
+                <span><i class="fas fa-check"></i> Hotel Stay</span>
+                <span><i class="fas fa-check"></i> Buddhist Guide</span>
+                <span><i class="fas fa-check"></i> Site Fees</span>
+                <span><i class="fas fa-check"></i> Meals Included</span>
+              </div>
+              <div class="pkg-footer">
+                <div class="pkg-price">
+                  <span>NPR 18,000</span>
+                  <small>/person</small>
+                </div>
+                <a href="#contact" class="btn btn-primary btn-sm" id="pkg-lumbini-btn">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- end packages-grid -->
+      </div>
+    </section>
+
+    <!-- ===================== WHY CHOOSE US ===================== -->
+    <section class="section why-section" id="about">
+      <div class="container">
+
+        <div class="why-inner">
+          <div class="why-left reveal" id="why-left">
+            <span class="section-tag">Why Nepal Trails</span>
+            <h2 class="section-title">We Don't Just Plan Trips.<br />We Create Memories.</h2>
+            <p class="why-desc">Born in Nepal, built for travelers — we combine 15 years of local knowledge with genuine care to make your journey safe, affordable, and unforgettable.</p>
+
+            <div class="trust-metrics" id="trust-metrics">
+              <div class="trust-metric">
+                <span class="metric-num">10,000+</span>
+                <span class="metric-label">Happy Travelers</span>
+              </div>
+              <div class="trust-metric">
+                <span class="metric-num">100%</span>
+                <span class="metric-label">Safety Record</span>
+              </div>
+              <div class="trust-metric">
+                <span class="metric-num">4.9/5</span>
+                <span class="metric-label">Average Rating</span>
+              </div>
+            </div>
+
+            <div class="certifications" id="certifications">
+              <div class="cert-item">
+                <i class="fas fa-certificate"></i>
+                <span>NTB Registered</span>
+              </div>
+              <div class="cert-item">
+                <i class="fas fa-award"></i>
+                <span>TAAN Member</span>
+              </div>
+              <div class="cert-item">
+                <i class="fas fa-shield-alt"></i>
+                <span>Nepal Tourism Board Approved</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="why-right" id="why-right">
+            <div class="why-grid">
+
+              <div class="why-card reveal" id="why-guides">
+                <div class="why-icon why-icon-blue">
+                  <i class="fas fa-user-tie"></i>
+                </div>
+                <h4>Licensed Local Guides</h4>
+                <p>All our guides are NTB-certified, English-speaking locals with deep mountain knowledge and first-aid training.</p>
+              </div>
+
+              <div class="why-card reveal" id="why-price">
+                <div class="why-icon why-icon-orange">
+                  <i class="fas fa-tag"></i>
+                </div>
+                <h4>Genuinely Affordable</h4>
+                <p>Transparent pricing with no hidden fees. We offer Nepali price for domestic travelers and fair rates for international guests.</p>
+              </div>
+
+              <div class="why-card reveal" id="why-local">
+                <div class="why-icon why-icon-green">
+                  <i class="fas fa-map"></i>
+                </div>
+                <h4>Deep Local Expertise</h4>
+                <p>15 years operating in Nepal means we know every trail, village, shortcut, and hidden gem the guidebooks miss.</p>
+              </div>
+
+              <div class="why-card reveal" id="why-safe">
+                <div class="why-icon why-icon-red">
+                  <i class="fas fa-heart-pulse"></i>
+                </div>
+                <h4>Your Safety First</h4>
+                <p>Altitude sickness protocol, satellite phones on remote treks, emergency evacuation insurance, and trained medic guides.</p>
+              </div>
+
+              <div class="why-card reveal" id="why-support">
+                <div class="why-icon why-icon-purple">
+                  <i class="fas fa-headset"></i>
+                </div>
+                <h4>24/7 Support</h4>
+                <p>Reach us anytime via phone, WhatsApp, or Messenger. We're always there — before, during, and after your trip.</p>
+              </div>
+
+              <div class="why-card reveal" id="why-custom">
+                <div class="why-icon why-icon-teal">
+                  <i class="fas fa-sliders"></i>
+                </div>
+                <h4>Fully Custom Trips</h4>
+                <p>Your trip, your pace. We build 100% personalized itineraries for solo travelers, couples, families, and large groups.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+
+        <div class="section-header reveal" id="testimonials-header">
+          <span class="section-tag">Real Stories</span>
+          <h2 class="section-title">What Our Travelers Say</h2>
+          <p class="section-desc">Real reviews from real people — these memories made us proud.</p>
+        </div>
+
+        <div class="testimonials-grid" id="testimonials-grid">
+
+          <div class="testi-card reveal" id="testi-1">
+            <div class="testi-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"Nepal Trails le hamro EBC trek ra sab kura perfect arrange garyo. Guide daju dherai helpful ra professional thiyo. Hami sab family khusis bhaum. Agaadi pani yahich jastukai agency sangai janchau!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background-color: #E8A87C;">
+                <span>RS</span>
+              </div>
+              <div class="testi-info">
+                <strong>Rajan Sharma</strong>
+                <span>Kathmandu, Nepal</span>
+                <small>Everest Base Camp Trek</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card reveal" id="testi-2">
+            <div class="testi-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"We booked the Annapurna Circuit as a honeymoon. The team arranged everything perfectly — the teahouses, the views, the romantic moments. Nepal Trails turned our dream into reality. Absolutely magical experience!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background-color: #7EC8E3;">
+                <span>SP</span>
+              </div>
+              <div class="testi-info">
+                <strong>Sophie & Pierre Laurent</strong>
+                <span>Paris, France</span>
+                <small>Annapurna Circuit Trek</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card reveal" id="testi-3">
+            <div class="testi-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"Hamro Pokhara ra Chitwan package ati ramro bhayo. Bachhaharu khusi, hami ni khusi. Price ni affordable cha, quality ni best. Nepal Trails team lai dhanyabad! Sapari ma rhino dekheutheum, teti nai sundar anubhav!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background-color: #A8D8A8;">
+                <span>BT</span>
+              </div>
+              <div class="testi-info">
+                <strong>Binita Thapa</strong>
+                <span>Pokhara, Nepal</span>
+                <small>Family Package</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card reveal" id="testi-4">
+            <div class="testi-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"I was a solo traveler nervous about trekking in Nepal. The Nepal Trails team made me feel completely safe and looked after every single day. The Rara Lake trek changed my life. I'll be back for more!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background-color: #D4A8D8;">
+                <span>JM</span>
+              </div>
+              <div class="testi-info">
+                <strong>James Mitchell</strong>
+                <span>Melbourne, Australia</span>
+                <small>Rara Lake Trek</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card reveal" id="testi-5">
+            <div class="testi-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"Mustang tour was out of this world. Our guide Dawa knew every monastery, every cave, every legend. Nepal Trails created a cultural experience we never could have found on our own. Highly recommended!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background-color: #F4D03F;">
+                <span>AK</span>
+              </div>
+              <div class="testi-info">
+                <strong>Aisha Khan</strong>
+                <span>Dubai, UAE</span>
+                <small>Upper Mustang Tour</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card reveal" id="testi-6">
+            <div class="testi-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"Nepal Trails ko service ekdam transparent ra honest cha. Hidden charges chaina. WhatsApp ma call garda tatkaal response pauinthyo. Yasto agency Nepal ma paaunu dherai garho cha. Best decision of our trip!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background-color: #F0A500;">
+                <span>PM</span>
+              </div>
+              <div class="testi-info">
+                <strong>Prakash Magar</strong>
+                <span>Chitwan, Nepal</span>
+                <small>Jungle Safari Package</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Review badges -->
+        <div class="review-badges reveal" id="review-badges">
+          <div class="review-badge">
+            <i class="fab fa-google"></i>
+            <div>
+              <strong>4.9/5</strong>
+              <span>Google Reviews</span>
+            </div>
+          </div>
+          <div class="review-badge">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/TripAdvisor_Logo_Circle.svg/64px-TripAdvisor_Logo_Circle.svg.png" alt="TripAdvisor" style="width:32px;height:32px;object-fit:contain;"/>
+            <div>
+              <strong>4.8/5</strong>
+              <span>TripAdvisor</span>
+            </div>
+          </div>
+          <div class="review-badge">
+            <i class="fab fa-facebook"></i>
+            <div>
+              <strong>4.9/5</strong>
+              <span>Facebook Rating</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== GALLERY SECTION ===================== -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+
+        <div class="section-header reveal" id="gallery-header">
+          <span class="section-tag">Real Moments</span>
+          <h2 class="section-title">Nepal Through Our Lens</h2>
+          <p class="section-desc">A glimpse of the breathtaking landscapes and authentic moments that await you.</p>
+        </div>
+
+        <div class="gallery-masonry" id="gallery-grid">
+
+          <div class="gallery-item g-tall reveal" id="gal-1">
+            <div class="gallery-img" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500&q=80')">
+              <div class="gallery-caption">Everest Sunrise</div>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" id="gal-2">
+            <div class="gallery-img" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80')">
+              <div class="gallery-caption">Fewa Lake, Pokhara</div>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" id="gal-3">
+            <div class="gallery-img" style="background-image: url('https://images.unsplash.com/photo-1582719508461-905c673771fd?w=500&q=80')">
+              <div class="gallery-caption">Pashupatinath Temple</div>
+            </div>
+          </div>
+
+          <div class="gallery-item g-wide reveal" id="gal-4">
+            <div class="gallery-img" style="background-image: url('https://images.unsplash.com/photo-1551632811-561732d1e306?w=700&q=80')">
+              <div class="gallery-caption">Annapurna Trail</div>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" id="gal-5">
+            <div class="gallery-img" style="background-image: url('https://images.unsplash.com/photo-1597655601841-214a4cfe8b2c?w=500&q=80')">
+              <div class="gallery-caption">Ilam Tea Gardens</div>
+            </div>
+          </div>
+
+          <div class="gallery-item g-tall reveal" id="gal-6">
+            <div class="gallery-img" style="background-image: url('https://images.unsplash.com/photo-1501854140801-50d01698950b?w=500&q=80')">
+              <div class="gallery-caption">Rara Lake</div>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" id="gal-7">
+            <div class="gallery-img" style="background-image: url('https://images.unsplash.com/photo-1572305867721-db6ad8c1bf25?w=500&q=80')">
+              <div class="gallery-caption">Paragliding, Pokhara</div>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" id="gal-8">
+            <div class="gallery-img" style="background-image: url('https://images.unsplash.com/photo-1623282033815-40b05d96c903?w=500&q=80')">
+              <div class="gallery-caption">Annapurna Base Camp</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== BOOKING CTA BANNER ===================== -->
+    <section class="booking-cta-section" id="booking-cta">
+      <div class="cta-overlay"></div>
+      <div class="container cta-content">
+        <div class="cta-inner reveal" id="cta-inner">
+          <span class="cta-tag">Your Adventure Awaits</span>
+          <h2 class="cta-headline">Nepal is Calling You.<br />Will You Answer?</h2>
+          <p class="cta-desc">Every mountain you see has a trail. Every trail leads to a story. Let us help you write yours. Contact us now — no commitment, just a conversation.</p>
+          <div class="cta-actions">
+            <a href="tel:+9779825376245" class="btn btn-white btn-lg" id="cta-call-btn">
+              <i class="fas fa-phone"></i> Call: +977 9825376245
+            </a>
+            <a href="https://wa.me/9779825376245" target="_blank" class="btn btn-whatsapp btn-lg" id="cta-whatsapp-btn">
+              <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+          </div>
+          <div class="cta-reassurance">
+            <span><i class="fas fa-shield-alt"></i> 100% Safe</span>
+            <span><i class="fas fa-tag"></i> Best Price Guaranteed</span>
+            <span><i class="fas fa-undo"></i> Free Cancellation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+
+        <div class="section-header reveal" id="contact-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">We're Here to Help You Plan</h2>
+          <p class="section-desc">Reach us through any channel you prefer. Our team responds within 1 hour during business hours.</p>
+        </div>
+
+        <div class="contact-inner">
+
+          <!-- Contact Info -->
+          <div class="contact-info reveal" id="contact-info">
+
+            <div class="contact-card" id="contact-phone">
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Phone & WhatsApp</h4>
+                <a href="tel:+9779825376245">+977 984-1234567</a>
+                <a href="tel:+9779851234567">+977 985-1234567</a>
+                <a href="https://wa.me/9779825376245" target="_blank" class="whatsapp-link" id="contact-wa-link">
+                  <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-card" id="contact-email">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email Us</h4>
+                <a href="mailto:info@nepaltrails.com">info@nepaltrails.com</a>
+                <a href="mailto:booking@nepaltrails.com">booking@nepaltrails.com</a>
+              </div>
+            </div>
+
+            <div class="contact-card" id="contact-address">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Our Office</h4>
+                <p>Thamel, Kathmandu 44600<br />Nepal (Near Kathmandu Guest House)</p>
+                <p class="office-hours"><i class="fas fa-clock"></i> Open 7 days | 8am – 8pm NPT</p>
+              </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="social-links-block" id="social-links">
+              <h4>Follow Our Journey</h4>
+              <div class="social-icons">
+                <a href="#" class="social-icon si-fb" id="social-fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon si-ig" id="social-ig" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon si-yt" id="social-yt" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-icon si-tt" id="social-tt" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://wa.me/9779825376245" target="_blank" class="social-icon si-wa" id="social-wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrap reveal" id="contact-form-wrap">
+            <form class="contact-form" id="contact-form">
+              <h3>Send Us a Message</h3>
+
+              <div class="field-row">
+                <div class="field-group">
+                  <label for="contact-name">Full Name *</label>
+                  <input type="text" id="contact-name" name="name" placeholder="Your name" required />
+                </div>
+                <div class="field-group">
+                  <label for="contact-phone-input">Phone / WhatsApp *</label>
+                  <input type="tel" id="contact-phone-input" name="phone" placeholder="+977 98XXXXXXXX" required />
+                </div>
+              </div>
+
+              <div class="field-group">
+                <label for="contact-email-input">Email Address</label>
+                <input type="email" id="contact-email-input" name="email" placeholder="your@email.com" />
+              </div>
+
+              <div class="field-row">
+                <div class="field-group">
+                  <label for="contact-interest">Interested In</label>
+                  <select id="contact-interest" name="interest">
+                    <option value="">Select trip type</option>
+                    <option value="trekking">Trekking</option>
+                    <option value="cultural">Cultural Tour</option>
+                    <option value="family">Family Package</option>
+                    <option value="adventure">Adventure Sports</option>
+                    <option value="custom">Custom Itinerary</option>
+                  </select>
+                </div>
+                <div class="field-group">
+                  <label for="contact-budget">Budget Range</label>
+                  <select id="contact-budget" name="budget">
+                    <option value="">Select budget</option>
+                    <option value="under-10k">Under NPR 10,000</option>
+                    <option value="10k-30k">NPR 10,000 – 30,000</option>
+                    <option value="30k-70k">NPR 30,000 – 70,000</option>
+                    <option value="70k+">NPR 70,000+</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field-group">
+                <label for="contact-message">Your Message</label>
+                <textarea id="contact-message" name="message" rows="4" placeholder="Tell us about your dream trip — dates, group size, special requirements..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="contact-submit-btn">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+
+              <p class="form-note"><i class="fas fa-lock"></i> Your information is safe with us. We respond within 1 hour.</p>
+            </form>
+          </div>
+
+        </div><!-- end contact-inner -->
+
+        <!-- Map Placeholder -->
+        <div class="map-placeholder reveal" id="map-placeholder">
+          <div class="map-overlay-text">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Thamel, Kathmandu, Nepal</span>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.9088348!2d85.3114!3d27.7155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18fcb77fd4bd%3A0x58099b379e59c6c4!2sThamel%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1620000000000"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Nepal Trails Office Location - Thamel, Kathmandu"
+            id="google-map">
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-col footer-brand" id="footer-brand">
+          <div class="footer-logo">
+            <i class="fas fa-mountain"></i>
+            <span>Nepal Trails</span>
+          </div>
+          <p class="footer-brand-desc">Your trusted local travel partner since 2010. Explore Nepal's mountains, culture, and adventure with guides who call this land home.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook" id="footer-fb"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram" id="footer-ig"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube" id="footer-yt"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/9779825376245" target="_blank" aria-label="WhatsApp" id="footer-wa"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col" id="footer-links">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#trekking">Trekking</a></li>
+            <li><a href="#packages">Tour Packages</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Top Destinations -->
+        <div class="footer-col" id="footer-dests">
+          <h4 class="footer-col-title">Top Destinations</h4>
+          <ul class="footer-links-list">
+            <li><a href="#destinations">Everest Base Camp</a></li>
+            <li><a href="#destinations">Annapurna Circuit</a></li>
+            <li><a href="#destinations">Pokhara</a></li>
+            <li><a href="#destinations">Upper Mustang</a></li>
+            <li><a href="#destinations">Chitwan</a></li>
+            <li><a href="#destinations">Rara Lake</a></li>
+            <li><a href="#destinations">Lumbini</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Newsletter -->
+        <div class="footer-col footer-contact-col" id="footer-contact-col">
+          <h4 class="footer-col-title">Contact Us</h4>
+          <div class="footer-contact-items">
+            <p><i class="fas fa-phone"></i> <a href="tel:+9779825376245">+977 984-1234567</a></p>
+            <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/9779825376245" target="_blank">WhatsApp Same Number</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:info@nepaltrails.com">info@nepaltrails.com</a></p>
+            <p><i class="fas fa-map-marker-alt"></i> Thamel, Kathmandu, Nepal</p>
+          </div>
+
+          <div class="newsletter" id="newsletter">
+            <h4 class="footer-col-title" style="margin-top:1.5rem;">Newsletter</h4>
+            <p>Get travel tips and exclusive deals in your inbox.</p>
+            <form class="newsletter-form" id="newsletter-form">
+              <input type="email" id="newsletter-email" placeholder="Enter your email" required />
+              <button type="submit" id="newsletter-submit"><i class="fas fa-arrow-right"></i></button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2024 Nepal Trails. All rights reserved. | NTB Reg. No: 1234/2010 | TAAN Member</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== FLOATING CONTACT BUTTONS ===================== -->
+  <div class="floating-contacts" id="floating-contacts">
+    <a href="https://wa.me/+9779825376245" target="_blank" class="float-btn float-wa" id="float-whatsapp" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+      <span>WhatsApp</span>
+    </a>
+    <a href="tel:+9779825376245" class="float-btn float-call" id="float-call" aria-label="Call Us">
+      <i class="fas fa-phone-alt"></i>
+      <span>Call Us</span>
+    </a>
+    <a href="https://m.me/nepaltrails" target="_blank" class="float-btn float-messenger" id="float-messenger" aria-label="Messenger">
+      <i class="fab fa-facebook-messenger"></i>
+      <span>Messenger</span>
+    </a>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <i class="fas fa-check-circle"></i>
+    <span id="toast-message">Message sent successfully!</span>
+  </div>
+
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
